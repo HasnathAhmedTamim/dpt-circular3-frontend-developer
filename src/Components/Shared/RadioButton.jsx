@@ -1,10 +1,10 @@
 const RadioButton = () => {
   return (
-    <div className="flex flex-col md:flex-row md:items-center mt-4 justify-between">
-      <div className="mb-2 md:mb-0 md:mr-4">
+    <div className="flex flex-col md:flex-row md:items-center mt-4 justify-between font-bold ">
+      <div className="mb-2 md:mb-0 md:mr-4 ">
         {" "}
-        <input type="radio" value="Environment" name="Environment" /> Extra
-        Options
+        <input type="checkbox" id="extraOptions" name="extraOptions" />
+        Extra Options
       </div>
       <div className="flex flex-wrap gap-2">
         <input type="radio" value="Environment" name="Environment" />{" "}

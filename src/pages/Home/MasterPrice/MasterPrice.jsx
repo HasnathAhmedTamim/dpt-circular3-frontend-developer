@@ -2,6 +2,7 @@
 import InputField from "../../../Components/Shared/Inputfield";
 import RadioButton from "../../../Components/Shared/RadioButton";
 import Tab from "../../../Components/Shared/Tab";
+import Table from "../../../Components/Shared/Table";
 
 const MasterPrice = () => {
   return (
@@ -19,6 +20,12 @@ const MasterPrice = () => {
 
       <div>
         <RadioButton></RadioButton>
+      </div>
+      <hr className=" bottom-1 border w-full border-blue-500 my-4" />
+
+      <p>Parsed successfully</p>
+      <div className="mb-24">
+        <Table></Table>
       </div>
     </div>
   );
