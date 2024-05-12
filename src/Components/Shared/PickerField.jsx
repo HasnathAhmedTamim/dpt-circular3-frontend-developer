@@ -12,9 +12,7 @@ const PickerField = () => {
           <option>Planet of the Apes</option>
           <option>Star Trek</option>
         </select>
-        
       </label>
-     
     </div>
   );
 };
