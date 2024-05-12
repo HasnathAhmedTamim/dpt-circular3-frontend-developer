@@ -54,14 +54,19 @@ const Table = () => {
               } text-center text-sm`}
             >
               <td className="px-6 py-4 whitespace-nowrap">
-                {item.itineraries[0]?.segments[0]?.carrierCode}{" "}
-                {item.itineraries[0]?.segments[0]?.flightNumber}
+                {item.itineraries[0]?.segments.map((segment) => (
+                  <div key={segment.flightNumber}>
+                    {segment.carrierCode} {segment.flightNumber}
+                  </div>
+                ))}
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                {item.itineraries[0]?.segments[0]?.aircraft}
+                {item.itineraries[0]?.segments.map((segment) => (
+                  <div key={segment.aircraft}>{segment.aircraft}</div>
+                ))}
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                {item.class[0]?.map((classItem, classIndex) => (
+                {item.class[0].map((classItem, classIndex) => (
                   <div key={classIndex}>{classItem}</div>
                 ))}
               </td>
