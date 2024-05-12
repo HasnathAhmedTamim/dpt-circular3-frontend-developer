@@ -1,10 +1,22 @@
 
+// import { useEffect, useState } from "react";
 import InputField from "../../../Components/Shared/Inputfield";
 import RadioButton from "../../../Components/Shared/RadioButton";
 import Tab from "../../../Components/Shared/Tab";
 import Table from "../../../Components/Shared/Table";
+// import axios from "axios";
+
 
 const MasterPrice = () => {
+  // const [myData, setMyData] = useState([]);
+
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:5173/file.txt")
+  //     .then((resp) => setMyData(resp?.data));
+  // }, []);
+  // const data = myData.flightOffer;
+  // console.log(data);
   return (
     <div className="grid justify-center">
       <h1 className="text-black font-bold text-3xl p-2 ">Master Price</h1>
@@ -26,6 +38,9 @@ const MasterPrice = () => {
       <p>Parsed successfully</p>
       <div className="mb-24">
         <Table></Table>
+        {/* {data?.map((data, id) => (
+          <Table key={id} data={data}></Table>
+        ))} */}
       </div>
     </div>
   );
