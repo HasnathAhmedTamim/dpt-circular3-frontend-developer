@@ -18,29 +18,31 @@ const MasterPrice = () => {
   // const data = myData.flightOffer;
   // console.log(data);
   return (
-    <div className="grid justify-center">
+    <div className="grid  justify-center items-center">
       <h1 className="text-black font-bold text-3xl p-2 ">Master Price</h1>
 
-      <div>
-        <Tab></Tab>
-      </div>
-      <hr className=" bottom-1 border w-full border-blue-500 my-4" />
-      <div>
-        <InputField></InputField>
-      </div>
-      <hr className=" bottom-1 border w-full border-blue-500 my-4" />
+      <div className="">
+        <div>
+          <Tab></Tab>
+        </div>
+        <hr className=" bottom-1 border w-full border-blue-500 my-4" />
+        <div>
+          <InputField></InputField>
+        </div>
+        <hr className=" bottom-1 border w-full border-blue-500 my-4" />
 
-      <div>
-        <RadioButton></RadioButton>
-      </div>
-      <hr className=" bottom-1 border w-full border-blue-500 my-4" />
+        <div>
+          <RadioButton></RadioButton>
+        </div>
+        <hr className=" bottom-1 border w-full border-blue-500 my-4" />
 
-      <p>Parsed successfully</p>
-      <div className="mb-24">
-        <Table></Table>
-        {/* {data?.map((data, id) => (
+        <p>Parsed successfully</p>
+        <div className="mb-24">
+          <Table></Table>
+          {/* {data?.map((data, id) => (
           <Table key={id} data={data}></Table>
         ))} */}
+        </div>
       </div>
     </div>
   );

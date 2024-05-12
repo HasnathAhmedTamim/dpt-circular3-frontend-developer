@@ -5,8 +5,10 @@ import NavBar from "../Components/NavBar/NavBar";
 
 const Main = () => {
     return (
-      <div>
-        <NavBar></NavBar>
+      <div className="">
+        <div className="">
+          <NavBar></NavBar>
+        </div>
         <div className="">
           <Outlet></Outlet>
         </div>
