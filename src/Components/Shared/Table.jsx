@@ -46,7 +46,7 @@ const Table = () => {
           </tr>
         </thead>
         <tbody>
-          {myData.map((item, index) => (
+          {myData?.map((item, index) => (
             <tr
               key={index}
               className={`${
