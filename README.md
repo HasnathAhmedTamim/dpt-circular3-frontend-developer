@@ -15,6 +15,7 @@ This project is a flight search user interface built with ReactJS, Vite, and Tai
 3. Start the development server: `npm run dev`
 4. Open http://localhost:5173 in your browser.
 5. First Data Table will show null when you click `Search` button it will show data in my table
+6. Before go to live link run in vscode
 
 ## Development Process
 
