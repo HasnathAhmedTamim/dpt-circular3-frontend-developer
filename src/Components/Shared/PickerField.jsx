@@ -1,10 +1,10 @@
-const PickerField = () => {
+const PickerField = ({title}) => {
   return (
     <div>
       <label className=" ">
         <select className="select select-bordered">
           <option disabled selected>
-            Day-
+            {title}-
           </option>
           <option>Star Wars</option>
           <option>Harry Potter</option>

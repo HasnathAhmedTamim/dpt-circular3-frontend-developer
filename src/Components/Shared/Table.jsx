@@ -1,16 +1,4 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-
-const Table = () => {
-  const [myData, setMyData] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:5173/file.txt")
-      .then((resp) => setMyData(resp?.data?.flightOffer || []))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
-
+const Table = ({ myData = [] }) => {
   return (
     <div className="overflow-x-auto border-2">
       <table className="min-w-full divide-y divide-gray-200">
