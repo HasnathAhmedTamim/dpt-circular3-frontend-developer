@@ -17,7 +17,9 @@ const MasterPrice = () => {
     // Fetch data if search is triggered
     if (isSearchData) {
       axios
-        .get("http://localhost:5173/data/LHR_CDG_ADT1_TYPE_1.txt")
+        .get(
+          "https://dpt-circular3-frontend-developer-eta.vercel.app//data/LHR_CDG_ADT1_TYPE_1.txt"
+        )
         .then((resp) => setMyData(resp?.data?.flightOffer || []))
         .catch((error) => console.error("Error fetching data:", error));
     }
