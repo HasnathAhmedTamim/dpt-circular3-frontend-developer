@@ -5,7 +5,7 @@ import MasterPrice from "../pages/Home/MasterPrice/MasterPrice";
 import CustomPrice from "../pages/Home/CustomPrice/CustomPrice";
 import Calender from "../pages/Home/Calender/Calender";
 import Reports from "../pages/Home/Reports/Reports";
-
+// Creating a BrowserRouter instance using createBrowserRouter function
 export const router = createBrowserRouter([
   {
     path: "/",
