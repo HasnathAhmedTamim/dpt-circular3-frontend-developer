@@ -8,18 +8,21 @@ import Table from "../../../Components/Shared/Table";
 // import axios from "axios";
 
 const MasterPrice = () => {
+  // State variables for storing data and search status
   const [myData, setMyData] = useState([]);
   const [isSearchData, setIsSearchData] = useState(false);
 
+  // Effect hook to fetch data when search is triggered
   useEffect(() => {
+    // Fetch data if search is triggered
     if (isSearchData) {
       axios
-        .get("http://localhost:5173/file.txt")
+        .get("http://localhost:5173/data/LHR_CDG_ADT1_TYPE_1.txt")
         .then((resp) => setMyData(resp?.data?.flightOffer || []))
         .catch((error) => console.error("Error fetching data:", error));
     }
   }, [isSearchData]);
-
+  // Function to handle search button click
   const handleSearchButton = () => {
     console.log("yes");
     setIsSearchData(true);

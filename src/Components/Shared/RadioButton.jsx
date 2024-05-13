@@ -13,7 +13,7 @@ const RadioButton = () => {
         <input type="radio" value="PDT" name="PDT" /> PDT
       </div>
       <div>
-        <button className="btn btn-primary mt-2 md:mt-0">Search</button>
+        {/* <button className="btn btn-primary mt-2 md:mt-0">Search</button> */}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ const PickerField = ({title}) => {
       <label className=" ">
         <select className="select select-bordered">
           <option disabled selected>
-            {title}-
+            {title}
           </option>
           <option>Star Wars</option>
           <option>Harry Potter</option>

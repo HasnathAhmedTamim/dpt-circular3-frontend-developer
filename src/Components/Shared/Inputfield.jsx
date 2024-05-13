@@ -31,19 +31,20 @@ const InputField = ({
               className="rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-200 sm:text-sm sm:leading-6"
               placeholder="Search Aircraft"
             />
-            <PickerField title={"Day"}/>
-            <PickerField title={"Month"}/>
-            <PickerField title={"Year"}/>
+            <PickerField title={"Day"} />
+            <PickerField title={"Day+"} />
+            <PickerField title={"AnyTime"} />
             <span className="text-center justify-center items-center flex font-bold">
               +
             </span>
-            <PickerField />
-            <PickerField />
+            <PickerField title={"ADT"} />
+            <PickerField title={"1"} />
+
             <span className="text-center justify-center items-center flex font-bold">
               +
             </span>
             <button
-              onClick={handleSearchButton} 
+              onClick={handleSearchButton}
               className="px-4 py-2 btn-primary btn text-white rounded-md ml-0 sm:ml-2 mt-2 sm:mt-0"
             >
               Search
